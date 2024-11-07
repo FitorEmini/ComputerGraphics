@@ -32,21 +32,21 @@ scene.add(road);
 const building1Geometry = new THREE.BoxGeometry(7.5, 3, 7.5);
 const building1Material = new THREE.MeshBasicMaterial({ color: 0xFFFFF });
 const building1 = new THREE.Mesh(building1Geometry, building1Material);
-building1.position.set(-7, 1, 8);  
+building1.position.set(-7, 3, 8);  
 scene.add(building1);
 
 
 const building2Geometry = new THREE.BoxGeometry(4, 3, 15);
 const building2Material = new THREE.MeshBasicMaterial({ color: 0xFFFFF });
 const building2 = new THREE.Mesh(building2Geometry, building2Material);
-building2.position.set(7.5, 1, -1);  
+building2.position.set(7.5, 3, -1);  
 scene.add(building2);
 
 
 const building3Geometry = new THREE.BoxGeometry(7.5, 3, 7.5);
 const building3Material = new THREE.MeshBasicMaterial({ color: 0xFFFF });
 const building3 = new THREE.Mesh(building3Geometry, building3Material);
-building3.position.set(-7, 1, -8);  
+building3.position.set(-7, 3, -8);  
 scene.add(building3);
 
 
