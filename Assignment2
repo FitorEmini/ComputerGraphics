@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-box position="0 2 0" depth="6" height="4" width="6" color="#f0f0f0" material="side: double"></a-box>
+        
+        <a-light type="ambient" color="#bbb" intensity="1.2"></a-light>
+        <a-light type="directional" position="2 4 2" intensity="1.5" color="#fff"></a-light>
+        
+        <a-camera position="0 1.6 3"></a-camera>
+        
+        <a-plane position="0 2 -3" width="4" height="2" color="#87CEEB" material="opacity: 0.7; transparent: true;"></a-plane>
+        <a-plane position="0 0 -5" width="10" height="5" rotation="-90 0 0" color="#228B22"></a-plane>
+        <a-sky color="#87CEEB"></a-sky>
+
+        <a-entity position="-1 0 -1">
+            <a-entity gltf-model="models/Computer_Desk.glb" scale="0.5 0.5 0.5"></a-entity>
+            <a-entity gltf-model="models/Chair.glb" position="-0.5 0 -0.5" scale="0.5 0.5 0.5"></a-entity>
+            <a-entity gltf-model="models/Chair.glb" position="0.5 0 -0.5" scale="0.5 0.5 0.5"></a-entity>
+        </a-entity>
+
+        <a-entity position="1 0 -1">
+            <a-entity gltf-model="models/Computer_Desk.glb" scale="0.5 0.5 0.5"></a-entity>
+            <a-entity gltf-model="models/Chair.glb" position="-0.5 0 -0.5" scale="0.5 0.5 0.5"></a-entity>
+            <a-entity gltf-model="models/Chair.glb" position="0.5 0 -0.5" scale="0.5 0.5 0.5"></a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
